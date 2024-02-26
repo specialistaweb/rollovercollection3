@@ -26,6 +26,14 @@
         "bootstrap",
         "package"
     ],
+    "package": {
+        "name": "specialistaweb/rollovercollection4",
+        "version": "7.0.2",
+        "dist": {
+            "url": "https://extensions.typo3.org/extension/download/rollovercollection3/7.0.2/zip",
+            "type": "zip"
+        }
+    },
    "require": {
         "typo3/cms-core": "^11.5.24 || ^12.4",
         "bk2k/bootstrap-package": "^11.5 || ^14.0"
