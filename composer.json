@@ -28,9 +28,9 @@
     ],
     "package": {
         "name": "specialistaweb/rollovercollection4",
-        "version": "7.0.2",
+        "version": "7.0.3",
         "dist": {
-            "url": "https://extensions.typo3.org/extension/download/rollovercollection3/7.0.2/zip",
+            "url": "https://extensions.typo3.org/extension/download/rollovercollection3/7.0.3/zip",
             "type": "zip"
         }
     },
