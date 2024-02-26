@@ -1,0 +1,115 @@
+{namespace bk2k = BK2K\BootstrapPackage\ViewHelpers}
+
+<f:comment>
+            #####################################################
+            default LAYOUT
+           #####################################################
+
+</f:comment>
+
+<f:if condition="{data.layout} == 0">
+
+<figure class="image">
+  <f:if condition="{file.link}">    
+        <f:then>
+            <f:link.typolink parameter="{file.link}" title="{file.title}">
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+            </f:link.typolink>
+        </f:then>
+        <f:else>
+            <f:if condition="{data.image_zoom}">
+                <f:then>
+                    <a href="{f:uri.image(image: file, maxHeight: '1200', maxWidth: '1200')}" title="{file.title}" class="{settings.lightbox.cssClass}" data-lightbox-width="{bk2k:lastImageInfo(property: 'width')}" data-lightbox-height="{bk2k:lastImageInfo(property: 'height')}" rel="{settings.lightbox.prefix}-{data.uid}">
+                        <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+                    </a>
+                </f:then>
+                <f:else>
+                    <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+                </f:else>
+            </f:if>
+        </f:else>
+      </f:if>
+    
+    <figcaption class="caption">
+        {file.description}
+    </figcaption>
+</figure>
+</f:if>
+
+
+
+<f:comment>
+            #####################################################
+            layout 2750 - style#1
+            #####################################################
+ 
+</f:comment> 
+
+<f:if condition="{data.layout} == 2750">     
+  <div class="view view-first">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+
+<f:if condition="{data.layout} == 2751">     
+  <div class="view view-second">
+       <f:render partial="Media/Rendering/ViewSecond" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+<f:if condition="{data.layout} == 2752">     
+  <div class="view view-third">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+<f:if condition="{data.layout} == 2753">     
+  <div class="view view-fourth">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+<f:if condition="{data.layout} == 2754">     
+  <div class="view view-fifth">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+<f:if condition="{data.layout} == 2755">     
+  <div class="view view-sixth">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data,file: file, settings: settings}" />
+  </div>
+</f:if>
+
+<f:if condition="{data.layout} == 2756">     
+  <div class="view view-seventh">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+
+<f:if condition="{data.layout} == 2757">     
+  <div class="view view-eighth">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+<f:if condition="{data.layout} == 2758"> 
+
+    
+  <div class="view view-ninth">
+     <f:render partial="Media/Rendering/ViewNinth" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+
+</f:if>
+    
+
+<f:if condition="{data.layout} == 2759">     
+  <div class="view view-tenth">
+       <f:render partial="Media/Rendering/ViewDefault" arguments="{data:data, file: file, settings: settings}" />
+  </div>
+</f:if>
+
+      
+

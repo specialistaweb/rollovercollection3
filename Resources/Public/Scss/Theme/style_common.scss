@@ -1,0 +1,132 @@
+.rollover3 {
+   padding-left: 6px;
+   padding-right: 6px;   
+}
+
+
+.view {
+    max-width: $rollover3-block-maxwidth;
+    height: auto;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border: 10px solid white;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow:  1px 1px 2px #ccc;
+    -moz-box-shadow:  1px 1px 2px #ccc;
+    box-shadow: 1px 1px 2px #ccc;
+    cursor: default;
+    background: transparent;
+}
+
+.view figure {
+   margin-bottom: 0px;
+}
+
+.view figure.image > img {
+   width: 100%;
+}
+
+.view figure.image div.mask div.valign {
+   height: 100%;
+   height: 100%;
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center;
+}
+
+.view .mask,.view .content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view .content > .valign, .view .content > .valign > .vcontainer  {
+   height: 100%;
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center;
+}
+
+.view .mask {
+   padding-top: 0px;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: $rollover3-title-textcolor;
+   text-align: center;
+   position: relative;
+   font-size: 16px;
+   padding: 10px;
+   background: $rollover3-title-bgcolor;
+   margin: 0px;
+}
+
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 12px;
+   position: relative;
+   color: $rollover3-caption-textcolor;
+   background: $rollover3-caption-bgcolor;
+   padding: 16px;
+   text-align: center;
+   margin: 0px;
+   line-height: 1.1em;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: $rollover3-button-bgcolor;
+   color: #fff;
+   font-size:12px;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+     background: $rollover3-button-hover-bgcolor;
+}
+
+
+//breakpoints
+
+.gallery-item {
+   --gallery-gap: 0.6em;
+    width: calc((100% / var(--gallery-columns)) - (var(--gallery-gap) * (var(--gallery-columns) - 1)) / var(--gallery-columns));
+}
+
+@media screen and (max-width: 1024px) {
+ .gallery-row.rollover3 gallery-item.rollover3 {
+    --gallery-columns: 3;
+ }
+}
+
+@media screen and (max-width: 720px) {
+ .gallery-row.rollover3 gallery-item.rollover3 {
+    --gallery-columns: 2;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .gallery-row.rollover3 .gallery-item.rollover3 {
+    --gallery-columns: 1;
+ }
+}
+

@@ -1,0 +1,10 @@
+      <h2><f:format.raw>{file.title}</f:format.raw></h2>
+      <f:if condition="{settings.R3captionRawdataOutput} == 1">
+        <f:then>  
+             <p><f:format.raw>{file.description}</f:format.raw></p>
+        </f:then>
+        <f:else>
+             <p><f:format.html>{file.description}</f:format.html></p>
+        </f:else>
+       </f:if>
+

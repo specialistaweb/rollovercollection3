@@ -1,0 +1,46 @@
+{
+    "name": "typo3-local/rollovercollection3",
+    "description": "only for bootstrap5 + boostrap package v.11+ - ORIGINAL HOVER EFFECTS - cType supported: textmedia, media and images (https://tympanus.net/Tutorials/OriginalHoverEffects/index.html) - Only for Bootstrap Package 12 + Bootstrap 5.x (SCSS) (bootstrap_package)",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Alessandro Tuveri",
+            "role": "Developer"
+        },
+        {
+            "name": "Giulia Tuveri",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "rollover",
+        "image",
+        "textpic",
+        "gallery",
+        "hover",
+        "effects",
+        "picture",
+        "bootstrap",
+        "package"
+    ],
+   "require": {
+        "typo3/cms-core": "^11.5.24 || ^12.4",
+        "bk2k/bootstrap-package": "^11.5 || ^14.0"
+    },
+    "suggest": [],
+    "conflict": [],
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "rollovercollection3"
+        }
+    },
+    "version": "dev-local",
+    "autoload": {
+        "classmap": [
+            ""
+        ]
+    }
+}

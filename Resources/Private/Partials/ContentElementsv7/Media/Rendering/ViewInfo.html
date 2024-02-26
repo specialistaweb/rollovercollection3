@@ -1,0 +1,23 @@
+  <div class="valign">
+    <div class="vcontainer">
+      <h2><f:format.raw>{file.title}</f:format.raw></h2>
+      <p>
+      <f:if condition="{settings.R3captionRawdataOutput} == 1"> 
+        <f:then>  
+             <f:format.raw>{file.description}</f:format.raw>
+        </f:then>
+        <f:else>
+             <f:format.html>{file.description}</f:format.html>
+        </f:else>
+       </f:if>
+      </p>
+
+    <f:if condition="{settings.R3useButtonMore} == 1">
+     <f:if condition="{file.link}">
+      <f:link.typolink parameter="{file.link}" title="{file.title}" class="info">
+          <f:cObject typoscriptObjectPath="lib.rollovercollection3.label.readMore" />
+      </f:link.typolink>
+     </f:if>
+    </f:if>
+    </div>
+  </div>
