@@ -35,7 +35,7 @@ image rollover collection 1
 		Alex Tuveri, Giulia Tuveri
 
 	:Email:
-		at@uniud.it, gt@specialistaweb.it
+		at@specialistaweb.it, gt@specialistaweb.it
 
 	:License:
 		This document is published under the Open Content License
@@ -51,5 +51,5 @@ image rollover collection 1
 	**Table of Contents**
 
 	For any information / contact / help / suggestion please visit:
-	`http://typo3-rollovereffects.uniud.it <http://typo3-rollovereffects.uniud.it>`_.
+	`http://typo3.specialistaweb.it <http://typo3.specialistaweb.it>`_.
 
