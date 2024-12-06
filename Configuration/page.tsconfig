@@ -1,0 +1,55 @@
+###########
+# TCEFORM #
+###########
+
+TCEFORM.tt_content.layout.types.textpic {
+  addItems.2750 = OHE - style#1
+  addItems.2751 = OHE - style#2
+  addItems.2752 = OHE - style#3
+  addItems.2753 = OHE - style#4
+  addItems.2754 = OHE - style#5
+  addItems.2755 = OHE - style#6
+  addItems.2756 = OHE - style#7
+  addItems.2757 = OHE - style#8
+  addItems.2758 = OHE - style#9
+  addItems.2759 = OHE - style#10
+}
+
+TCEFORM.tt_content.layout.types.image {
+  addItems.2750 = OHE - style#1
+  addItems.2751 = OHE - style#2
+  addItems.2752 = OHE - style#3
+  addItems.2753 = OHE - style#4
+  addItems.2754 = OHE - style#5
+  addItems.2755 = OHE - style#6
+  addItems.2756 = OHE - style#7
+  addItems.2757 = OHE - style#8
+  addItems.2758 = OHE - style#9
+  addItems.2759 = OHE - style#10
+}
+
+TCEFORM.tt_content.layout.types.media {
+  addItems.2750 = OHE - style#1
+  addItems.2751 = OHE - style#2
+  addItems.2752 = OHE - style#3
+  addItems.2753 = OHE - style#4
+  addItems.2754 = OHE - style#5
+  addItems.2755 = OHE - style#6
+  addItems.2756 = OHE - style#7
+  addItems.2757 = OHE - style#8
+  addItems.2758 = OHE - style#9
+  addItems.2759 = OHE - style#10
+}
+
+TCEFORM.tt_content.layout.types.textmedia {
+  addItems.2750 = OHE - style#1
+  addItems.2751 = OHE - style#2
+  addItems.2752 = OHE - style#3
+  addItems.2753 = OHE - style#4
+  addItems.2754 = OHE - style#5
+  addItems.2755 = OHE - style#6
+  addItems.2756 = OHE - style#7
+  addItems.2757 = OHE - style#8
+  addItems.2758 = OHE - style#9
+  addItems.2759 = OHE - style#10
+}
