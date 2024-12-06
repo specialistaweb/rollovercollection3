@@ -31,7 +31,7 @@
     ],
     "require": {
     	"bk2k/bootstrap-package": ">= 12 < 16",
-        "typo3/cms-core": ">= 12 < 14""
+        "typo3/cms-core": ">= 12 < 14"
     },
     "autoload": {
         "psr-4": {
