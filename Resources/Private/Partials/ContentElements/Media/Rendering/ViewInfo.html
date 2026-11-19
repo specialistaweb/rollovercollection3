@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>Texts of a box: title, description and, when the image has a link, the "more" button.</f:comment>
+<div class="valign">
+    <div class="vcontainer">
+        <h2><f:render partial="Media/Rendering/Title" arguments="{file: file, settings: settings}" /></h2>
+        <f:render partial="Media/Rendering/Description" arguments="{file: file, settings: settings}" />
+        <f:if condition="{settings.R3useButtonMore} == 1 && {file.link}">
+            <f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}" class="info">
+                <f:cObject typoscriptObjectPath="lib.rollovercollection3.label.readMore" />
+            </f:link.typolink>
+        </f:if>
+    </div>
+</div>
+</html>

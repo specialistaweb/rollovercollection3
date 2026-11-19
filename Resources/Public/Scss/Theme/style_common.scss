@@ -3,7 +3,6 @@
    padding-right: 6px;   
 }
 
-
 .view {
     max-width: $rollover3-block-maxwidth;
     height: auto;
@@ -15,8 +14,6 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    -webkit-box-shadow:  1px 1px 2px #ccc;
-    -moz-box-shadow:  1px 1px 2px #ccc;
     box-shadow: 1px 1px 2px #ccc;
     cursor: default;
     background: transparent;
@@ -93,17 +90,12 @@
    color: #fff;
    font-size:12px;
    text-transform: uppercase;
-   -webkit-box-shadow: 0 0 1px #000;
-   -moz-box-shadow: 0 0 1px #000;
    box-shadow: 0 0 1px #000;
 }
 .view a.info:hover {
-   -webkit-box-shadow: 0 0 5px #000;
-   -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
      background: $rollover3-button-hover-bgcolor;
 }
-
 
 //breakpoints
 
@@ -112,17 +104,21 @@
     width: calc((100% / var(--gallery-columns)) - (var(--gallery-gap) * (var(--gallery-columns) - 1)) / var(--gallery-columns));
 }
 
-@media screen and (max-width: 1024px) {
- .gallery-row.rollover3 gallery-item.rollover3 {
-    --gallery-columns: 3;
- }
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// @media screen and (max-width: 1024px) {
+//  .gallery-row.rollover3 gallery-item.rollover3 {
+//     --gallery-columns: 3;
+//  }
+// }
 
-@media screen and (max-width: 720px) {
- .gallery-row.rollover3 gallery-item.rollover3 {
-    --gallery-columns: 2;
- }
-}
+// DISABLED in 9.0.0: the selector is invalid or can never match, so browsers never applied this rule.
+// It is kept here for reference: fix the selector to enable it (see README, "Inactive CSS rules").
+// @media screen and (max-width: 720px) {
+//  .gallery-row.rollover3 gallery-item.rollover3 {
+//     --gallery-columns: 2;
+//  }
+// }
 
 @media screen and (max-width: 480px) {
  .gallery-row.rollover3 .gallery-item.rollover3 {
@@ -130,3 +126,10 @@
  }
 }
 
+
+// 9.0.0: replaces the inline style="opacity: 1.0" that versions up to 8.x wrote on every <img>.
+// Same effect (the image never fades), but without inline styles (Content Security Policy friendly).
+// Remove this rule to enable the original fade-out of styles #4, #7 and #10 on hover.
+.rollover3 .view img {
+   opacity: 1 !important;
+}

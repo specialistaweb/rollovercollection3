@@ -1,8 +1,20 @@
 {
     "name": "specialistaweb/rollovercollection3",
     "type": "typo3-cms-extension",
-    "minimum-stability":"dev",
-    "description": "TYPO3 CMS - only for bootstrap5 + boostrap package v.11+ - ORIGINAL HOVER EFFECTS - cType supported: textmedia, media and images https://tympanus.net/Tutorials/OriginalHoverEffects/index.html) - Only for Bootstrap Package 12 + Bootstrap 5.x (SCSS) (bootstrap_package)",
+    "description": "OHE: ten \"Original Hover Effects\" (from tympanus.net) for the content elements textmedia, media, textpic and image. Requires bootstrap_package (Bootstrap 5).",
+    "keywords": [
+        "TYPO3",
+        "image",
+        "rollover",
+        "effect",
+        "hover",
+        "columns",
+        "bootstrap5",
+        "bootstrap",
+        "ohe"
+    ],
+    "homepage": "https://typo3.specialistaweb.it/typo3-extensions/rollovereffects/ohe",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Alessandro Tuveri",
@@ -13,30 +25,12 @@
             "role": "Developer"
         }
     ],
-    "keywords": [
-        "image",
-        "rollover",
-        "effect",
-        "block",
-        "div",
-        "columns",
-        "bootstrap5",
-        "bootstrap",
-        "hover",
-        "box"
-    ],
-    "homepage": "https://typo3.specialistaweb.it/typo3-extensions/rollovereffects/ohe",
-    "license": [
-        "GPL-2.0-or-later"
-    ],
     "require": {
-    	"bk2k/bootstrap-package": ">= 12 < 16",
-        "typo3/cms-core": ">= 12 < 14"
-    },
-    "autoload": {
-        "psr-4": {
-            "SpecialistaWeb\\Rollovercollection3\\": "Classes"
-        }
+        "php": "^8.2",
+        "bk2k/bootstrap-package": "^16.0",
+        "typo3/cms-core": "^13.4 || ^14.3",
+        "typo3/cms-fluid": "^13.4 || ^14.3",
+        "typo3/cms-frontend": "^13.4 || ^14.3"
     },
     "extra": {
         "typo3/cms": {

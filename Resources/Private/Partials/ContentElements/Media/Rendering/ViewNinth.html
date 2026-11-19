@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>Style #9: the whole box is linked (no "more" button), two animated masks.</f:comment>
+<f:link.typolink parameter="{file.link}" title="{file.title -> f:format.stripTags()}">
+    <f:render partial="Media/Rendering/Image" arguments="{file: file, settings: settings}" />
+    <div class="mask mask-1"></div>
+    <div class="mask mask-2"></div>
+    <div class="content">
+        <h2><f:render partial="Media/Rendering/Title" arguments="{file: file, settings: settings}" /></h2>
+        <f:render partial="Media/Rendering/Description" arguments="{file: file, settings: settings}" />
+    </div>
+</f:link.typolink>
+</html>

@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Rollovercollection 3 - OHE: one box per image, effect selected by tt_content.layout.
+
+    2750 style#1 | 2751 style#2 | 2752 style#3 | 2753 style#4 | 2754 style#5
+    2755 style#6 | 2756 style#7 | 2757 style#8 | 2758 style#9 | 2759 style#10
+
+    Fields of the file reference: title = heading, description = text, link = target of the
+    "more" button (style#9: the whole box is linked).
+    This partial is only reached for the layouts above (see setup.typoscript).
+</f:comment>
+<f:variable name="partialArguments" value="{file: file, settings: settings}" />
+<f:switch expression="{data.layout}">
+    <f:case value="2750"><div class="view view-first"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2751"><div class="view view-second"><f:render partial="Media/Rendering/ViewSecond" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2752"><div class="view view-third"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2753"><div class="view view-fourth"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2754"><div class="view view-fifth"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2755"><div class="view view-sixth"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2756"><div class="view view-seventh"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2757"><div class="view view-eighth"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2758"><div class="view view-ninth"><f:render partial="Media/Rendering/ViewNinth" arguments="{partialArguments}" /></div></f:case>
+    <f:case value="2759"><div class="view view-tenth"><f:render partial="Media/Rendering/ViewDefault" arguments="{partialArguments}" /></div></f:case>
+</f:switch>
+</html>

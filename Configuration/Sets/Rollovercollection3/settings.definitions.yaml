@@ -1,0 +1,188 @@
+# Rollovercollection 3 - OHE: site settings (Site Management > Settings).
+# Every setting is also available as TypoScript constant with the same key.
+# Keep the defaults in sync with Configuration/TypoScript/constants.typoscript.
+categories:
+  Rollovercollection3:
+    label: 'Rollovercollection 3 - OHE'
+  Rollovercollection3.general:
+    label: 'General'
+    parent: Rollovercollection3
+  Rollovercollection3.size:
+    label: 'Size'
+    parent: Rollovercollection3
+  Rollovercollection3.colors:
+    label: 'Colors'
+    parent: Rollovercollection3
+  Rollovercollection3.mask:
+    label: 'Mask background'
+    parent: Rollovercollection3
+
+settings:
+
+  plugin.tx_rollovercollection3_rollovereffect3.view.scssPath:
+    label: 'Path to the SCSS folder'
+    description: 'Folder containing theme.scss, with trailing slash. Change it only to use your own copy of the theme.'
+    category: Rollovercollection3.general
+    type: string
+    default: 'EXT:rollovercollection3/Resources/Public/Scss/Theme/'
+
+  plugin.tx_rollovercollection3_rollovereffect3.settings.titleRawdataOutput:
+    label: 'Title: keep HTML typed by editors'
+    description: 'On: HTML in the image title is kept and cleaned by the TYPO3 HTML sanitizer. Off: plain text only.'
+    category: Rollovercollection3.general
+    type: bool
+    default: true
+
+  plugin.tx_rollovercollection3_rollovereffect3.settings.captionRawdataOutput:
+    label: 'Caption: keep HTML typed by editors'
+    description: 'On: HTML in the image description is kept and cleaned by the TYPO3 HTML sanitizer. Off: formatted with lib.parseFunc_RTE (as before).'
+    category: Rollovercollection3.general
+    type: bool
+    default: false
+
+  plugin.tx_rollovercollection3_rollovereffect3.settings.useButtonMore:
+    label: 'Show the "more" button'
+    description: 'On: a "more" button is shown when the image has a link.'
+    category: Rollovercollection3.general
+    type: bool
+    default: true
+
+  plugin.tx_rollovercollection3_rollovereffect3.settings.imageMaxWidth:
+    label: 'Maximum image width in pixels'
+    description: 'Images wider than this are scaled down before delivery. 0 = deliver the original file.'
+    category: Rollovercollection3.general
+    type: int
+    default: 1140
+
+  plugin.bootstrap_package.settings.scss.rollover3-block-maxwidth:
+    label: '$rollover3-block-maxwidth'
+    description: 'Maximum width of each box (px or %)'
+    category: Rollovercollection3.size
+    type: string
+    default: '100%'
+
+  plugin.bootstrap_package.settings.scss.rollover3-brand-primary:
+    label: '$rollover3-brand-primary'
+    description: 'Base color'
+    category: Rollovercollection3.colors
+    type: string
+    default: '#000'
+
+  plugin.bootstrap_package.settings.scss.rollover3-title-textcolor:
+    label: '$rollover3-title-textcolor'
+    description: 'Title text color'
+    category: Rollovercollection3.colors
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover3-title-bgcolor:
+    label: '$rollover3-title-bgcolor'
+    description: 'Title background color'
+    category: Rollovercollection3.colors
+    type: string
+    default: '$rollover3-brand-primary'
+
+  plugin.bootstrap_package.settings.scss.rollover3-caption-textcolor:
+    label: '$rollover3-caption-textcolor'
+    description: 'Caption text color'
+    category: Rollovercollection3.colors
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover3-caption-bgcolor:
+    label: '$rollover3-caption-bgcolor'
+    description: 'Caption background color'
+    category: Rollovercollection3.colors
+    type: string
+    default: 'transparent'
+
+  plugin.bootstrap_package.settings.scss.rollover3-button-textcolor:
+    label: '$rollover3-button-textcolor'
+    description: 'Button text color'
+    category: Rollovercollection3.colors
+    type: string
+    default: 'white'
+
+  plugin.bootstrap_package.settings.scss.rollover3-button-bgcolor:
+    label: '$rollover3-button-bgcolor'
+    description: 'Button background color'
+    category: Rollovercollection3.colors
+    type: string
+    default: '$rollover3-brand-primary'
+
+  plugin.bootstrap_package.settings.scss.rollover3-button-hover-bgcolor:
+    label: '$rollover3-button-hover-bgcolor'
+    description: 'Button background color on hover'
+    category: Rollovercollection3.colors
+    type: string
+    default: 'lighten($rollover3-button-bgcolor,16)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style1-bgcolor:
+    label: '$rollover3-mask-style1-bgcolor'
+    description: 'Mask background color, style#1'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.5)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style2-bgcolor:
+    label: '$rollover3-mask-style2-bgcolor'
+    description: 'Mask background color, style#2'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.4)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style3-bgcolor:
+    label: '$rollover3-mask-style3-bgcolor'
+    description: 'Mask background color, style#3'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.4)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style4-bgcolor:
+    label: '$rollover3-mask-style4-bgcolor'
+    description: 'Mask background color, style#4'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.9)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style5-bgcolor:
+    label: '$rollover3-mask-style5-bgcolor'
+    description: 'Mask background color, style#5'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.3)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style6-bgcolor:
+    label: '$rollover3-mask-style6-bgcolor'
+    description: 'Mask background color, style#6'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.5)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style7-bgcolor:
+    label: '$rollover3-mask-style7-bgcolor'
+    description: 'Mask background color, style#7'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.9)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style8-bgcolor:
+    label: '$rollover3-mask-style8-bgcolor'
+    description: 'Mask background color, style#8'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(255,255,255,0.7)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style9-bgcolor:
+    label: '$rollover3-mask-style9-bgcolor'
+    description: 'Mask background color, style#9'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(0,0,0,0.2)'
+
+  plugin.bootstrap_package.settings.scss.rollover3-mask-style10-bgcolor:
+    label: '$rollover3-mask-style10-bgcolor'
+    description: 'Mask background color, style#10'
+    category: Rollovercollection3.mask
+    type: string
+    default: 'rgba(255,255,255,0.8)'

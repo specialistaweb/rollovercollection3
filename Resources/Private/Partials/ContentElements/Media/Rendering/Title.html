@@ -1,0 +1,11 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Title of an OHE box.
+    R3titleRawdataOutput = 1: HTML typed by the editor is kept, cleaned by the TYPO3 HTML sanitizer.
+    R3titleRawdataOutput = 0: plain text only.
+</f:comment>
+<f:if condition="{settings.R3titleRawdataOutput} == 1">
+    <f:then><f:sanitize.html>{file.title}</f:sanitize.html></f:then>
+    <f:else>{file.title -> f:format.stripTags() -> f:format.htmlspecialchars(doubleEncode: 0)}</f:else>
+</f:if>
+</html>

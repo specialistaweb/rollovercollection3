@@ -1,0 +1,11 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Description of an OHE box, always wrapped in a paragraph (the theme styles the empty one too).
+    R3captionRawdataOutput = 1: HTML typed by the editor is kept, cleaned by the TYPO3 HTML sanitizer.
+    R3captionRawdataOutput = 0: formatted with lib.parseFunc_RTE, as in previous versions.
+</f:comment>
+<f:if condition="{settings.R3captionRawdataOutput} == 1">
+    <f:then><p><f:sanitize.html>{file.description}</f:sanitize.html></p></f:then>
+    <f:else><p><f:format.html>{file.description}</f:format.html></p></f:else>
+</f:if>
+</html>

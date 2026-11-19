@@ -1,2 +1,4 @@
-name: Specialistaweb/rollovercollection3
-label: Rollovercollection3 - OHE
+name: Specialistaweb/Rollovercollection3
+label: 'Rollovercollection 3 - OHE'
+dependencies:
+  - bootstrap-package/full

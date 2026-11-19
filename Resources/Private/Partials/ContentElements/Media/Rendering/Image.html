@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+    Image of an OHE box: a single, already scaled file (settings.R3imageMaxWidth, 0 = original).
+    Versions up to 8.x also generated four unused size variants per image for a lazyload script
+    that bootstrap_package no longer ships. No width/height attributes on purpose: the theme sizes
+    the image with width: 100% only.
+</f:comment>
+<f:variable name="maxWidth">{settings.R3imageMaxWidth as integer}</f:variable>
+<f:if condition="{maxWidth} > 0">
+    <f:then><img src="{f:uri.image(image: file, maxWidth: maxWidth)}" loading="lazy" alt="{file.alternative}" title="{file.title -> f:format.stripTags() -> f:format.htmlspecialchars(doubleEncode: 0)}" /></f:then>
+    <f:else><img src="{f:uri.image(image: file)}" loading="lazy" alt="{file.alternative}" title="{file.title -> f:format.stripTags() -> f:format.htmlspecialchars(doubleEncode: 0)}" /></f:else>
+</f:if>
+</html>
